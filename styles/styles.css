@@ -131,6 +131,18 @@ header {
 
 .social-icons-container {
   display: none;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 90%;
+}
+
+.social-icons li {
+  font-size: 1.8rem;
+}
+.social-icons li a {
+  padding: 15px;
+  display: block;
 }
 
 .main-header-container {
@@ -467,6 +479,10 @@ footer p {
     font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+  }
+
+  .social-icons-container {
+    display: block;
   }
 
   .tips-section {
