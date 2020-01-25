@@ -506,6 +506,10 @@ footer p {
     margin: 0;
   }
 
+  .nature-info p {
+    margin-left: auto;
+  }
+
   .blog-inner-container .section-button {
     font-size: 1.7rem;
   }
