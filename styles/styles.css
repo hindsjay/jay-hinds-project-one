@@ -121,7 +121,7 @@ header {
 }
 
 .header-nav li:nth-child(-n+3) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .logo {
@@ -228,6 +228,11 @@ header {
   margin: 0 auto;
 }
 
+/* .tip-content-container {
+  max-width: 680px;
+  margin: 0 auto;
+} */
+
 .tips-section h2 {
   margin-top: 20px;
 }
@@ -239,19 +244,12 @@ header {
 
 
 /* ************* blog section styles ************* */
-.blog-image-container {
-  /* max-width: 700px; */
-  margin: 0 auto;
-}
-
-.overall-blog {
-  max-width: 1070px;
-  margin: 0 auto;
-}
-
 .blog-content-container {
   background-color: rgb(240, 245, 255);
   text-align: center;
+}
+
+.blog-inner-container {
   padding: 40px 0;
 }
 
@@ -269,11 +267,6 @@ header {
 
 .blog-inner-container .section-button {
   margin-top: 20px;
-}
-
-/* updated the width of wrapper for the blog section because mobile mockup images are against the edge */
-.blog-section .wrapper {
-  width: 100%;
 }
 
 
@@ -462,9 +455,58 @@ footer p {
     width: 30%;
     float: left;
   }
+}
 
-  .blog-image-container img {
-    object-fit: fill;
+
+@media (min-width: 800px) {
+  .logo {
+    float: left;
+    width: 30%;
+  }
+
+  .header-nav-container {
+    float: right;
+    padding-top: 35px;
+    display: block;
+  }
+
+  .header-nav li {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .tips-section {
+    padding: 70px 0;
+  }
+
+  .tips-section h2 {
+    margin-top: 0;
+  }
+
+  .tips-section p {
+    font-size: 1.6rem;
+  }
+
+  .tip-image-container {
+    float: left;
+    width: 30%;
+    margin: 0;
+  }
+
+  .tip-content-container {
+    float: right;
+    width: calc(70% - 30px);
+    margin-left: 30px;
+    text-align: left;
+  }
+  
+}
+
+
+@media (min-width: 1050px) {
+  .overall-blog {
+    background-color: rgb(240, 245, 255);
   }
 
   .blog-image-container,
@@ -490,11 +532,8 @@ footer p {
   }
 
   .blog-inner-container {
-    max-width: 320px;
-  }
-
-  .blog-inner-container:first-child {
-    margin-right: 30px;
+    max-width: 380px;
+    padding: 60px 0 0;
   }
 
   .blog-inner-container h3 {
@@ -502,7 +541,7 @@ footer p {
   }
 
   .blog-inner-container p {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     margin: 0;
   }
 
@@ -516,87 +555,11 @@ footer p {
 
   .nature-info .blog-inner-container {
     text-align: right;
-    margin-left: 150px;
+    margin: 0 80px 0 auto;
   }
 
   .photography-info .blog-inner-container {
     text-align: initial;
     margin-left: 80px;
   }
-}
-
-
-@media (min-width: 890px) {
-  .logo {
-    float: left;
-    width: 30%;
-  }
-
-  .header-nav-container {
-    float: right;
-    padding-top: 35px;
-    display: block;
-  }
-
-  .header-nav li {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-}
-
-
-@media (min-width: 1070px) {
-  /* .blog-image-container,
-  .blog-content-container {
-    width: 50%;
-  }
-
-  .blog-image-1 {
-    float: right;
-  }
-
-  .nature-info {
-    float: left;
-  }
-
-  .blog-image-2 {
-    float: left;
-    clear: both;
-  }
-
-  .photography-info {
-    float: left;
-  }
-
-  .blog-inner-container {
-    max-width: 320px;
-  }
-
-  .blog-inner-container:first-child {
-    margin-right: 30px;
-  }
-
-  .blog-inner-container h3 {
-    font-size: 2.5rem;
-  }
-
-  .blog-inner-container p {
-    font-size: 1.6rem;
-    margin: 0;
-  }
-
-  .blog-inner-container .section-button {
-    font-size: 1.7rem;
-  }
-
-  .nature-info .blog-inner-container {
-    text-align: right;
-    margin-left: 150px;
-  }
-
-  .photography-info .blog-inner-container {
-    text-align: initial;
-    margin-left: 80px;
-  } */
 }
