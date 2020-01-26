@@ -149,11 +149,10 @@ header {
 
 .hamburger {
   position: fixed;
-  top: 30px;
+  top: 15px;
   right: 20px;
   z-index: 100;
   padding: 8px 10px;
-  background-color: rgba(0, 0, 0, .5)
 }
 
 .logo {
