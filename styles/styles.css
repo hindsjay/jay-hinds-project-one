@@ -74,6 +74,13 @@ section h2 {
   font-size: 4rem;
 }
 
+.header-nav li,
+.hamburger,
+.social-icons,
+button {
+  cursor: pointer
+}
+
 .main-header-container h1,
 .about-section,
 .tips-section {
@@ -98,6 +105,19 @@ section h2 {
   display: inline-block;
 }
 
+.header-nav li,
+.section-button,
+button {
+  transition: 0.3s ease;
+}
+
+.section-button:hover,
+.section-button:focus,
+button:hover,
+button:focus {
+  opacity: 0.7;
+}
+
 
 /* ************* header styles ************* */
 header {
@@ -119,15 +139,25 @@ header {
   background: rgba(0, 0, 0, .9);
   position: fixed;
   top: 0;
-  width: 101%;
+  width: 100%;
   z-index: 10;
-  transition: .5s;
+  transition: transform .5s;
   transform: translateX(100%);
+}
+
+.header-nav li {
+  margin: 10px 0;
+}
+
+.header-nav li:hover,
+.header-nav li:focus {
+  background-color: rgba(231, 168, 230, .8);
+  color: black;
 }
 
 .header-nav a {
   display: block;
-  padding: 15px;
+  padding: 10px 15px;
 }
 
 .header-nav-container input {
@@ -556,10 +586,8 @@ footer p {
 
   .header-nav li {
     letter-spacing: 1px;
-  }
-
-  .header-nav li {
     display: inline-block;
+    margin: 5px 0;
   }
 
   .header-nav li:nth-child(-n+3) {
