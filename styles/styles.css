@@ -80,9 +80,14 @@ section h2 {
   text-align: center;
 }
 
+.header-nav {
+  text-transform: uppercase;
+}
+
 .about-section,
 .tips-section,
-.section-button {
+.section-button,
+.header-nav {
   font-size: 1.8rem;
 }
 
@@ -105,16 +110,50 @@ header {
   position: relative;
 }
 
-.header-nav-container {
+.header-nav {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 1.7rem;
+  margin: 0 auto;
+  height: 100vh;
+  background: rgba(0, 0, 0, .9);
+  position: fixed;
+  top: 0;
+  width: 101%;
+  z-index: 10;
+  transition: .5s;
+  transform: translateX(100%);
+}
+
+.header-nav a {
+  display: block;
+  padding: 15px;
+}
+
+.header-nav-container input {
   display: none;
 }
 
-.header-nav li {
-  display: inline-block;
+.header-nav-container input:checked ~ .header-nav {
+  transform: translateX(-5%);
 }
 
-.header-nav li:nth-child(-n+3) {
-  margin-right: 20px;
+/* ************* header hamburger menu styles ************* */
+.header-nav-container span {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  display: block;
+  background: white;
+}
+
+.hamburger {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  z-index: 100;
+  padding: 8px 10px;
+  background-color: rgba(0, 0, 0, .5)
 }
 
 .logo {
@@ -230,7 +269,12 @@ header {
 
 .tip-image-container {
   width: 90%;
-  max-width: 400px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.tip-content-container {
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -465,22 +509,53 @@ footer p {
 
   .header-nav-container {
     float: right;
-    padding-top: 35px;
-    display: block;
+    padding-top: 15px;
+  }
+
+  .header-nav-container input {
+    display: none;
+  }
+
+  .header-nav {
+    text-align: unset;
+    padding-top: unset;
+    margin: unset;
+    height: unset;
+    background: unset;
+    position: initial;
+    transform: translateX(5%);
   }
 
   .header-nav li {
-    font-size: 1.8rem;
-    text-transform: uppercase;
     letter-spacing: 1px;
+  }
+
+  .header-nav li {
+    display: inline-block;
+  }
+
+  .header-nav li:nth-child(-n+3) {
+    margin-right: 20px;
   }
 
   .social-icons-container {
     display: block;
   }
 
+  .hamburger {
+    display: none;
+  }
+
+}
+
+
+@media (min-width: 1050px) {
   .tips-section {
     padding: 70px 0;
+  }
+
+  .tips-section .wrapper {
+    max-width: 1000px;
   }
 
   .tips-section h2 {
@@ -494,7 +569,7 @@ footer p {
   .tip-image-container {
     float: left;
     width: 30%;
-    margin: 0;
+    max-width: 300px;
   }
 
   .tip-content-container {
@@ -503,10 +578,7 @@ footer p {
     margin-left: 30px;
     text-align: left;
   }
-}
 
-
-@media (min-width: 1050px) {
   .overall-blog {
     background-color: rgb(240, 245, 255);
   }
