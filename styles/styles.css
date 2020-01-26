@@ -76,7 +76,7 @@ section h2 {
 
 .header-nav li,
 .hamburger,
-.social-icons,
+.social-icons li,
 button {
   cursor: pointer
 }
@@ -87,7 +87,12 @@ button {
   text-align: center;
 }
 
-.header-nav {
+.header-nav,
+.section-button,
+.main-header-container h1,
+.contact-section h3,
+button,
+.pages li {
   text-transform: uppercase;
 }
 
@@ -99,7 +104,6 @@ button {
 }
 
 .section-button {
-  text-transform: uppercase;
   background-color: rgb(231, 168, 230);
   padding: 10px 30px;
   display: inline-block;
@@ -250,7 +254,6 @@ https://codepen.io/erikterwan/pen/EVzeRP
 
 .main-header-container h1 {
   font-size: 1.8rem;
-  text-transform: uppercase;
   font-weight: initial;
 }
 
@@ -386,7 +389,6 @@ https://codepen.io/erikterwan/pen/EVzeRP
 
 .contact-section h3 {
   font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
   font-size: 2rem;
   letter-spacing: 1px;
 }
@@ -422,7 +424,6 @@ input[type="email"]::placeholder {
 button {
   display: block;
   font-size: 1.5rem;
-  text-transform: uppercase;
   background-color: rgb(231, 168, 230);
   border: none;
 }
@@ -443,7 +444,6 @@ button {
 }
 
 .pages li {
-  text-transform: uppercase;
   margin: 9px 0;
   font-size: 1.4rem;
 }
