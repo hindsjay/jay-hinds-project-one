@@ -38,10 +38,30 @@
 
       <div class="social-icons-container">
         <ul class="social-icons">
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-f" aria-hidden="true" title="Facebook Social Icon"></i>
+              <span class="sr-only">Facebook Social Icon</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram" aria-hidden="true" title="Instagram Social Icon"></i>
+              <span class="sr-only">Instagram Social Icon</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-linkedin-in" aria-hidden="true" title="LinkedIn Social Icon"></i>
+              <span class="sr-only">LinkedIn Social Icon</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter" aria-hidden="true" title="Twitter Social Icon"></i>
+              <span class="sr-only">Twitter Social Icon</span>
+            </a>
+          </li>
         </ul>
       </div>  <!-- social-icons-container ends -->
 
@@ -60,24 +80,38 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, tempora repudiandae quo at excepturi atque quas sint consectetur ipsa. A dolores quidem, deleniti accusantium autem inventore ratione suscipit labore eius, iure vitae quas similique, rem nobis!</p>
           <a href="#" class="section-button">Find Out More</a>
         </div>
-      </div>
-    </section>
+      </div>  <!-- wrapper ends -->
+    </section>  <!-- about section ends -->
 
     <section id="gallery" class="photo-gallery clearfix">
       <div class="wrapper">
-        <div class="gallery-image-container image-1">
-          <img src="./assets/asset-2.jpg" alt="photo of palm trees during sunset">
-        </div>
-        <div class="gallery-image-container image-2">
-          <img src="./assets/asset-3.jpg" alt="bubbles coming out of a glass jar">
-        </div>
-        <div class="gallery-image-container image-3">
-          <img src="./assets/asset-4.jpg" alt="oncoming traffic in city core with large buildings in surrounding area">
-        </div>
-      </div>
-    </section>
+        <!-- wrapped images in a list as this is a more semantic way of completing our markup.  I considered this a list of photos so decided to include them in a list. -->
+
+        <!-- Looking at the docs on MDN for section elements it says it should usually have a header included within the section.  The design doesn't have a header in this section so I decided to create one but hide it using sr-only.  This would be good for accessibility reasons as well. -->
+        <h2 class="sr-only">Photo Gallery</h2>
+        <ul>
+          <li>
+            <div class="gallery-image-container image-1">
+              <img src="./assets/asset-2.jpg" alt="photo of palm trees during sunset">
+            </div>
+          </li>
+          <li>
+            <div class="gallery-image-container image-2">
+              <img src="./assets/asset-3.jpg" alt="bubbles coming out of a glass jar">
+            </div>
+          </li>
+          <li>
+            <div class="gallery-image-container image-3">
+              <img src="./assets/asset-4.jpg" alt="oncoming traffic in city core with large buildings in surrounding area">
+            </div>
+          </li>
+        </ul>
+      </div>  <!-- wrapper ends -->
+    </section>  <!-- gallert section ends -->
 
     <section class="middle-nav-container">
+      <!-- Looking at the docs on MDN for section elements it says it should usually have a header included within the section.  The design doesn't have a header in this section so I decided to create one but hide it using sr-only.  This would be good for accessibility reasons as well. -->
+      <h2 class="sr-only">Middle Navigation</h2>
       <div class="wrapper">
         <nav>
           <ul class="clearfix">
@@ -107,8 +141,8 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </section>
+      </div>  <!-- wrapper ends -->
+    </section>  <!-- middle nav section ends -->
 
     <section id="tips" class="tips-section">
       <div class="wrapper clearfix">
@@ -120,10 +154,12 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo officiis deleniti quibusdam debitis! Tempore vel sit autem vitae nihil perspiciatis necessitatibus cum, quia suscipit. Veritatis adipisci nostrum autem, accusantium qui, porro maxime saepe illo ipsa illum molestias deserunt hic dicta mollitia optio vel dolore in praesentium eos at repellendus ratione voluptatum, voluptate beatae! Explicabo culpa placeat assumenda, nisi officiis nemo. At necessitatibus cum, unde quae delectus ab voluptate quidem odio inventore veniam nihil quos veritatis harum illo iusto enim, pariatur, molestiae laboriosam beatae? Quis, error.</p>
           <a href="#" class="section-button">Find Out More</a>
         </div>
-      </div>
-    </section>
+      </div>  <!-- wrapper ends -->
+    </section>  <!-- tips section ends -->
 
     <section class="blog-section">
+      <!-- Looking at the docs on MDN for section elements it says it should usually have a header included within the section.  The design doesn't have a header in this section so I decided to create one but hide it using sr-only.  This would be good for accessibility reasons as well. -->
+      <h2 class="sr-only">Blogs</h2>
       <!-- used article tags in this section as I felt this represented blog posts and provided a good opportunity to use a more semantic element -->
       <article class="overall-blog clearfix">
         <div class="blog-image-container blog-image-1">
@@ -135,8 +171,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae reprehenderit molestiae accusantium maxime recusandae voluptates voluptas laudantium.</p>
             <a href="#" class="section-button">Read More</a>
           </div>
-        </div>
-      </article>
+        </div>  <!-- blog content container ends -->
+      </article>  <!-- overall blog article1 ends -->
 
       <article class="overall-blog clearfix">
         <div class="blog-image-container blog-image-2">
@@ -148,9 +184,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae reprehenderit molestiae accusantium maxime recusandae voluptates voluptas laudantium.</p>
             <a href="#" class="section-button">Read More</a>
           </div>
-        </div>
-      </article>
-    </section>
+        </div>  <!-- blog content container ends -->
+      </article>  <!-- overall blog article2 ends -->
+    </section>  <!-- blog section ends -->
 
     <section class="contact-section" id="contact">
       <div class="wrapper clearfix">
@@ -163,7 +199,7 @@
             <input id="email" type="email" name="email" placeholder="email address">
             <button type="submit">Subscribe</button>
           </form>
-        </div>
+        </div> <!-- form div ends -->
 
         <div class="contact">
           <h3>Contact</h3>
@@ -171,7 +207,7 @@
           <p>123 - 456 - 7890</p>
           <p>123 some road</p>
           <p>Toronto, ON</p>
-        </div>
+        </div>  <!-- contact ends -->
 
         <div class="pages">
           <h3>Pages</h3>
@@ -181,9 +217,9 @@
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
-      </div>
-    </section>
+        </div>  <!-- pages ends -->
+      </div>  <!-- wrapper ends -->
+    </section>  <!-- contact section ends -->
   </main>
 
   <footer>
