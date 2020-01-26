@@ -139,14 +139,16 @@ header {
   background: rgba(0, 0, 0, .9);
   position: fixed;
   top: 0;
-  width: 100%;
+  /* needed to make 101% as there was a very small part that didn't cover the screen when active - this only happened sometimes */
+  width: 101%;
   z-index: 10;
   transition: transform .5s;
   transform: translateX(100%);
 }
 
 .header-nav li {
-  margin: 10px 0;
+  margin: 10px auto;
+  width: 150px;
 }
 
 .header-nav li:hover,
@@ -588,6 +590,7 @@ footer p {
     letter-spacing: 1px;
     display: inline-block;
     margin: 5px 0;
+    width: unset;
   }
 
   .header-nav li:nth-child(-n+3) {
