@@ -138,6 +138,13 @@ header {
   transform: translateX(-5%);
 }
 
+/* 
+*************************
+Used this as a guide to help build out the hamburger menu functionality:
+https://codepen.io/erikterwan/pen/EVzeRP
+************************* 
+*/
+
 /* ************* header hamburger menu styles ************* */
 .header-nav-container span {
   width: 30px;
@@ -145,6 +152,8 @@ header {
   margin: 5px 0;
   display: block;
   background: white;
+  transition: transform .3s ease;
+  position: relative;
 }
 
 .hamburger {
@@ -153,6 +162,26 @@ header {
   right: 20px;
   z-index: 100;
   padding: 8px 10px;
+}
+
+/* ************* styles to transform the hamburger menu on click ************* */
+
+/* top line */
+.header-nav-container input:checked ~ .hamburger span:first-child {
+  top: 7px;
+  transform: rotate(-45deg);
+}
+
+/* middle line */
+.header-nav-container input:checked ~ .hamburger span:nth-last-child(2) {
+  opacity: 0;
+  transform: scale(0.2);
+}
+
+/* third line */
+.header-nav-container input:checked ~ .hamburger span:last-child {
+  bottom: 8px;
+  transform: rotate(45deg);
 }
 
 .logo {
